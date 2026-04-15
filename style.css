@@ -611,18 +611,17 @@ footer {
 
 @media screen and (max-width: 768px) {
     .nav-links {
-        position: fixed; /* ganti dari absolute */
-        top: 0;
-        right: -100%; /* sembunyikan ke kanan */
-        width: 70%;
-        height: 100vh;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
         background: rgba(0,0,0,0.98);
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        transition: 0.3s ease-in-out;
-        z-index: 999;
+        padding: 2.5rem 0;
+        gap: 1.8rem;
+        border-bottom: 1px solid #222;
     }
     
     .nav-links.active {
