@@ -1,4 +1,4 @@
---- VARIABLES ---
+/* --- VARIABLES --- */
 :root {
     --bg-color: #000000;
     --text-color: #ffffff;
@@ -383,6 +383,7 @@ img {
         margin: 0 auto;
     }
 }
+
 
 /* --- SKILLS SECTION --- */
 .skills-grid {
