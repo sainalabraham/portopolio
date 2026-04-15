@@ -232,7 +232,8 @@ img {
 
 /* --- HERO SECTION --- */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 80px;
     display: flex;
     align-items: center;
     position: relative;
@@ -388,7 +389,7 @@ img {
 /* --- SKILLS SECTION --- */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -423,8 +424,7 @@ img {
 
 /* --- PROJECTS SECTION --- */
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2.5rem;
 }
 
