@@ -232,8 +232,7 @@ img {
 
 /* --- HERO SECTION --- */
 .hero {
-    min-height: 100vh;
-    padding-top: 80px;
+    height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -389,7 +388,7 @@ img {
 /* --- SKILLS SECTION --- */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -424,7 +423,8 @@ img {
 
 /* --- PROJECTS SECTION --- */
 .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2.5rem;
 }
 
@@ -611,17 +611,18 @@ footer {
 
 @media screen and (max-width: 768px) {
     .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
+        position: fixed; /* ganti dari absolute */
+        top: 0;
+        right: -100%; /* sembunyikan ke kanan */
+        width: 70%;
+        height: 100vh;
         background: rgba(0,0,0,0.98);
         flex-direction: column;
         align-items: center;
-        padding: 2.5rem 0;
-        gap: 1.8rem;
-        border-bottom: 1px solid #222;
+        justify-content: center;
+        gap: 2rem;
+        transition: 0.3s ease-in-out;
+        z-index: 999;
     }
     
     .nav-links.active {
