@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Premium Black & White</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Tempat Foto/Logo Anda: 
+                 Silakan hapus elemen teks "YOUR LOGO" ini dan uncomment tag <img> di bawahnya 
+                 lalu ganti src-nya dengan lokasi file logo Anda -->
+                 
+            <a href="#hero" class="logo">
+                YOUR<span>LOGO</span> 
+                <!-- <img src="assets/logo-anda.png" alt="Logo Pribadi" class="logo-img"> -->
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero fade-in">
+        <div class="container hero-content">
+            <h2 class="subtitle">Hello, I'm</h2>
+            <!-- Teks mengetik diatur di js/script.js -->
+            <h1 class="title"><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+            <p class="description">“Informatics student focused on learning application development and continuously improving skills through various projects.”.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-outline">View My Work</a>
+                <a href="#contact" class="btn btn-fill">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <hr class="divider">
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding fade-in"> 
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="profil.png" alt="Profile Photo">
+                </div>
+
+                <div class="about-text">
+                    <h3>Frontend Developer & Designer</h3>
+                    <p>I am an Informatics student learning to combine design and technology to build simple digital projects. I am developing my skills in modern web technologies and focusing on creating useful and user-friendly applications.</p>
+                    <p>My approach is simple: keep things clear and functional. I focus on learning good structure, performance, and improving user experience step by step.</p>
+                    <a href="#" class="btn btn-outline small-btn">Download Resume</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding fade-in">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h4>HTML5 / CSS3</h4>
+                    <p>Semantic structure & modern styling</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h4>JavaScript (ES6+)</h4>
+                    <p>Dynamic interactions & logic</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h4>Laravel</h4>
+                    <p>Component-based architectures</p>
+                </div>
+                <!-- Skill 4 -->
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Responsive UI</h4>
+                    <p>Mobile-first approach</p>
+                </div>
+                <!-- Skill 5 -->
+                <div class="skill-card">
+                    <i class="fab fa-figma"></i>
+                    <h4>UI / UX Design</h4>
+                    <p>Prototyping & wireframing</p>
+                </div>
+                <!-- Skill 6 -->
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h4>Git / Version Control</h4>
+                    <p>Collaborative workflows</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding fade-in">
+        <div class="container">
+            <h2 class="section-title">Selected Work</h2>
+            <div class="project-grid">
+                
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400/222222/FFFFFF.png?text=PROJECT+1" alt="Project 1" class="project-img">
+                    <div class="project-overlay glass-effect">
+                        <div class="overlay-content">
+                            <h3>Student Portfolio Website</h3>
+                            <p>Website portofolio sederhana sebagai latihan HTML, CSS, dan JavaScript</p>
+                            <p><small><strong>Status:</strong> Completed</small></p>
+                            <a href="#" class="btn btn-outline small-btn invert-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400/181818/FFFFFF.png?text=PROJECT+2" alt="Project 2" class="project-img">
+                    <div class="project-overlay glass-effect">
+                        <div class="overlay-content">
+                            <h3>UI Design Mobile App</h3>
+                            <p>Desain antarmuka aplikasi mobile (konsep) menggunakan Figma</p>
+                            <p><small><strong>Status:</strong> Concept</small></p>
+                            <a href="#" class="btn btn-outline small-btn invert-btn">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400/292929/FFFFFF.png?text=PROJECT+3" alt="Project 3" class="project-img">
+                    <div class="project-overlay glass-effect">
+                        <div class="overlay-content">
+                            <h3>Machine Learning Image Classifier</h3>
+                            <p>Model klasifikasi gambar sederhana sebagai tugas pembelajaran</p>
+                            <p><small><strong>Status:</strong> On Progress</small></p>
+                            <a href="#" class="btn btn-outline small-btn invert-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding fade-in">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form glass-effect">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline submit-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>sainalabraham96@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Makassar, Indonesia</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 sainalabraham </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
