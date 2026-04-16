@@ -105,3 +105,31 @@ navLinks.forEach(link => {
         icon.classList.add('fa-bars');
     });
 });
+
+// 5. Dark/Light Mode Toggle
+const themeToggleBtn = document.getElementById('theme-toggle');
+const themeIcon = themeToggleBtn.querySelector('i');
+
+// Cek preferensi sebelumnya di localStorage saat halaman dimuat
+const currentTheme = localStorage.getItem('portfolio-theme');
+if (currentTheme === 'light') {
+    document.body.classList.add('light-mode');
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
+}
+
+themeToggleBtn.addEventListener('click', () => {
+    // Toggle class pada body
+    document.body.classList.toggle('light-mode');
+    
+    // Ganti ikon sesuai mode saat ini & Simpan memori pilihan
+    if (document.body.classList.contains('light-mode')) {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+        localStorage.setItem('portfolio-theme', 'light');
+    } else {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+        localStorage.setItem('portfolio-theme', 'dark');
+    }
+});
