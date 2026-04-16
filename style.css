@@ -617,23 +617,51 @@ footer {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%; /* Menu muncul dari kanan */
+        right: -100%; /* Menu tersembunyi rata kanan */
         left: auto;
-        width: 250px;
+        width: 260px; /* Ukuran panel proporsional */
+        max-width: 80%; /* Jika layar HP cukup kecil */
         height: 100vh;
-        background: #111111;
+        background: rgba(17, 17, 17, 0.98); /* Solid untuk kontras dan jelas */
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        gap: 2rem;
+        justify-content: flex-start; /* Dimulai urutan dari atas bukan tegah */
+        align-items: flex-start; /* Susun Rata Kiri */
+        padding: 6rem 2rem 2rem 2rem; /* Ruangan dari atas agar Icon Navbar tidak tersentuh */
+        gap: 0; /* Gap dihilangkan agar diganti oleh padding di item link! */
         border-left: 1px solid var(--border-color);
         transition: right 0.3s ease-in-out;
         z-index: 999;
     }
     
     .nav-links.active {
-        right: 0; /* Toggle class untuk memunculkan dropdown */
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block; /* Menjadikan touch-friendly sejajar panel */
+        width: 100%;
+        padding: 1rem 0; /* Spacing click (touch friendly) di kanan/kiri */
+        font-size: 15px; /* Font size dikecilkan agar rapi sesuai request */
+        text-align: left; /* Teks Rata Kiri Sempurna */
+        color: var(--light-gray);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Pemisah setiap section agar clean */
+        transition: padding-left 0.3s ease, color 0.3s ease; /* Hover transitions */
+    }
+
+    /* Hilangkan animasi underline (::after) bawaan dari Desktop */
+    .nav-links a::after {
+        display: none;
+    }
+
+    /* Efek hover minimalis dan interaktif! */
+    .nav-links a:hover {
+        padding-left: 12px; /* Kesan interaktif menggeser per item saat diklik / di-hold */
+        color: var(--text-color); /* Highlight text memutih saat dipilih */
     }
     
     .mobile-menu {
