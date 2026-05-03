@@ -36,7 +36,10 @@ function erase() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if(textArray.length) setTimeout(type, newTextDelay + 250);
+    if(textArray.length) {
+        typedTextSpan.textContent = ""; // Clear fallback text for animation
+        setTimeout(type, newTextDelay + 250);
+    }
 });
 
 // 2. Navbar Scroll Effect (Glassmorphism enhancer)
